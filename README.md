@@ -19,4 +19,7 @@ Orenda means a mystical force present in all people that can empower them to aff
 - Wong, Steffi (DEV)
 
 
-## Preview ![Preview Desktop](Screenshot%2023-10-01%101037.png "Desktop Screen")    ![Preview Tablet](Screenshot%2023-10-01%101420.png "Tablet Screen")    ![Preview Standard Phone screen](Screenshot%2023-10-01%101551.png "Standard Phone Screen")  
+## Preview 
+![Preview Desktop](Screenshot%2023-10-01%101037.png "Desktop Screen")
+![Preview Tablet](Screenshot%2023-10-01%101420.png "Tablet Screen")
+![Preview Standard Phone screen](Screenshot%2023-10-01%101551.png "Standard Phone Screen")
