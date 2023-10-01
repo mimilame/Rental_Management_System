@@ -20,6 +20,6 @@ Orenda means a mystical force present in all people that can empower them to aff
 
 
 ## Preview 
-![Preview Desktop](Screenshot%202023-10-01%20101037.png "Desktop Screen")
-![Preview Tablet](Screenshot%202023-10-01%20101420.png "Tablet Screen")
-![Preview Standard Phone screen](Screenshot%202023-10-01%20101551.png "Standard Phone Screen")
+![Preview Desktop](Screenshot%202023-10-01%20101037.png "Desktop Screen") |
+![Preview Tablet](Screenshot%202023-10-01%20101420.png "Tablet Screen") |
+![Preview Standard Phone screen](Screenshot%202023-10-01%20101551.png "Standard Phone Screen") |
