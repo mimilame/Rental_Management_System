@@ -6,9 +6,7 @@ We, Group 6 in Software Engineering, were required to carry out an information s
 ## System Overview
 The system has admin, landlords, and tenants. These three users will be interconnected to create a functional and operational system that meets its system requirements. This project will allow tenants to view property, property units, leases, and invoices online. The rental apartment requires the aspiring tenant to avail of an apartment in person. The landlord will provide an account for the tenant to access the system. The system requires the tenant to log in to view their rental information. The tenant can raise a ticket if there are issues around their apartment. The admin and landlord administer the tenant transactions, tickets, and reports.
 
-## Orenda
-
- Orenda Company Logo ![Orenda Company Logo](orenda-icon.png "Company Logo")  
+## Orenda  ![Orenda Company Logo](orenda-icon.png "Company Logo")  
 
 Orenda means a mystical force present in all people that can empower them to affect the world or to affect change in their own lives. A company that provides quality appropriate business solutions and innovative client-base websites. Together with the team, we are committed to providing and ensuring that clients will receive the best possible solutions and maintain a thorough knowledge and understanding of the client’s objective to help their organizations achieve greater success.
 
@@ -21,5 +19,4 @@ Orenda means a mystical force present in all people that can empower them to aff
 - Wong, Steffi (DEV)
 
 
-## Preview
-|  ![Preview Desktop](Screenshot%2023-10-01%101037.png "Desktop Screen")  |  ![Preview Tablet](Screenshot%2023-10-01%101420.png "Tablet Screen")  |  ![Preview Standard Phone screen](Screenshot%2023-10-01%101551.png "Standard Phone Screen")  |
+## Preview ![Preview Desktop](Screenshot%2023-10-01%101037.png "Desktop Screen")    ![Preview Tablet](Screenshot%2023-10-01%101420.png "Tablet Screen")    ![Preview Standard Phone screen](Screenshot%2023-10-01%101551.png "Standard Phone Screen")  
