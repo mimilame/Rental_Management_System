@@ -8,7 +8,7 @@ The system has admin, landlords, and tenants. These three users will be intercon
 
 ## Orenda
 
-| Orenda Company Logo ![Orenda Company Logo](orenda-icon.png "Company Logo") | 
+ Orenda Company Logo ![Orenda Company Logo](orenda-icon.png "Company Logo")  
 
 Orenda means a mystical force present in all people that can empower them to affect the world or to affect change in their own lives. A company that provides quality appropriate business solutions and innovative client-base websites. Together with the team, we are committed to providing and ensuring that clients will receive the best possible solutions and maintain a thorough knowledge and understanding of the client’s objective to help their organizations achieve greater success.
 
@@ -22,4 +22,4 @@ Orenda means a mystical force present in all people that can empower them to aff
 
 
 ## Preview
-| ![Preview Desktop](Screenshot%2023-10-01%101037.png "Desktop Screen") | ![Preview Tablet](Screenshot%2023-10-01%101420.png "Tablet Screen") | ![Preview Standard Phone screen](Screenshot%2023-10-01%101551.png "Standard Phone Screen") |
+|  ![Preview Desktop](Screenshot%2023-10-01%101037.png "Desktop Screen")  |  ![Preview Tablet](Screenshot%2023-10-01%101420.png "Tablet Screen")  |  ![Preview Standard Phone screen](Screenshot%2023-10-01%101551.png "Standard Phone Screen")  |
