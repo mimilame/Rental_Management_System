@@ -12,12 +12,12 @@ The system has admin, landlords, and tenants. These three users will be intercon
 Orenda means a mystical force present in all people that can empower them to affect the world or to affect change in their own lives. A company that provides quality appropriate business solutions and innovative client-base websites. Together with the team, we are committed to providing and ensuring that clients will receive the best possible solutions and maintain a thorough knowledge and understanding of the client’s objective to help their organizations achieve greater success.
 
 ### Affiliates:
-- Abdulhamid, Fatima Dhoevia Racquiza ([Lead Designer & Developer](https://github.com/))
-- Alcontin, Ganilyn Avon ([Quality Assurance](https://github.com/avonalcontin))
-- Samson, Jenny Babe ([Project Manager](https://github.com/JennyBabe02))
-- Sultan, Kent Lowell ([Asst. Developer](https://github.com/Speckled23))
-- Tarroza, Roselyn ([Business Analyst](https://github.com/))
-- Wong, Steffi ([Lead Dev & Asst. Designer](https://github.com/mimilame02))
+ - [Abdulhamid, Fatima Dhoevia Racquiza](https://github.com/) (Lead Designer & Developer)
+ - [Alcontin, Ganilyn Avon](https://github.com/avonalcontin) (Quality Assurance)
+ - [Samson, Jenny Babe](https://github.com/JennyBabe02) (Project Manager)
+ - [Sultan, Kent Lowell](https://github.com/Speckled23) (Asst. Developer)
+ - [Tarroza, Roselyn](https://github.com/) (Business Analyst)
+ - [Wong, Steffi](https://github.com/mimilame02) (Lead Dev & Asst. Designer)
 
 
 ## Preview 
