@@ -7,17 +7,17 @@ We, Group 6 in Software Engineering, were required to carry out an information s
 The system has admin, landlords, and tenants. These three users will be interconnected to create a functional and operational system that meets its system requirements. This project will allow tenants to view property, property units, leases, and invoices online. The rental apartment requires the aspiring tenant to avail of an apartment in person. The landlord will provide an account for the tenant to access the system. The system requires the tenant to log in to view their rental information. The tenant can raise a ticket if there are issues around their apartment. The admin and landlord administer the tenant transactions, tickets, and reports.
 
 ## Orenda  
-<img align="right" width="300" height="300" alt="Company Logo" src="orenda-icon.png">
+<img align="right" width="30%" height="30%" alt="Company Logo" src="orenda-icon.png">
 
 Orenda means a mystical force present in all people that can empower them to affect the world or to affect change in their own lives. A company that provides quality appropriate business solutions and innovative client-base websites. Together with the team, we are committed to providing and ensuring that clients will receive the best possible solutions and maintain a thorough knowledge and understanding of the client’s objective to help their organizations achieve greater success.
 
 ### Affiliates:
-- Abdulhamid, Fatima Dhoevia Racquiza (Lead Designer & Developer)
-- Alcontin, Ganilyn Avon (Quality Assurance)
-- Samson, Jenny Babe (Project Manager)
-- Sultan, Kent Lowell (Asst. Developer)
-- Tarroza, Roselyn (Business Analyst)
-- Wong, Steffi (Lead Dev & Asst. Designer)
+- Abdulhamid, Fatima Dhoevia Racquiza ([Lead Designer & Developer](https://github.com/))
+- Alcontin, Ganilyn Avon ([Quality Assurance](https://github.com/avonalcontin))
+- Samson, Jenny Babe ([Project Manager](https://github.com/JennyBabe02))
+- Sultan, Kent Lowell ([Asst. Developer](https://github.com/Speckled23))
+- Tarroza, Roselyn ([Business Analyst](https://github.com/))
+- Wong, Steffi ([Lead Dev & Asst. Designer](https://github.com/mimilame02))
 
 
 ## Preview 
