@@ -6,6 +6,28 @@ We, Group 6 in Software Engineering, were required to carry out an information s
 ## System Overview
 The system has admin, landlords, and tenants. These three users will be interconnected to create a functional and operational system that meets its system requirements. This project will allow tenants to view property, property units, leases, and invoices online. The rental apartment requires the aspiring tenant to avail of an apartment in person. The landlord will provide an account for the tenant to access the system. The system requires the tenant to log in to view their rental information. The tenant can raise a ticket if there are issues around their apartment. The admin and landlord administer the tenant transactions, tickets, and reports.
 
+# Installation
+
+There are two options to set up this management system:
+
+### 1. Download the ZIP
+
+1. Click "Code" and select "Download ZIP" to download the files
+2. Extract the ZIP file to your desired folder
+3. Import the SQL file located in `rms_db.sql` into your MySQL database 
+4. Configure your database credentials in `dbconfig.php` and `database.php`
+5. Host the files on your server and access through your domain
+6. Register as a new admin user to get started  
+
+### 2. Fork the Repository 
+
+1. Click "Fork" in the top right to fork this repo
+2. Clone your forked repo to your local machine (using github desktop)
+3. Same procedure from the previous Step `3`-`5`.
+4. Register as a new admin user to get started
+
+And that's it! From your admin dashboard you can explore and manage the entire system. Let us know if you have any other questions!
+
 ## Orenda  
 <img align="right" width="30%" height="30%" alt="Company Logo" src="orenda-icon.png">
 
