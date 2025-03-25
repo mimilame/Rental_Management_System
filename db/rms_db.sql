@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2023 at 12:35 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Mar 25, 2025 at 01:31 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -161,7 +161,8 @@ CREATE TABLE `landlord` (
 --
 
 INSERT INTO `landlord` (`id`, `user_id`, `first_name`, `middle_name`, `last_name`, `date_of_birth`, `email`, `contact_no`, `address`, `region`, `provinces`, `city`, `identification_document`, `emergency_contact_person`, `emergency_contact_number`, `profile_img`, `created_at`, `updated_at`) VALUES
-(1, 2, 'Landlord', '', 'Test', '2005-04-28', 'try2@gmail.com', '0977 578 4225', 'Test Dr. Falcon St.', '09', '0973', '097332', 'id-guy.png', 'Test Trying Testing', '0964 572 4575', '', '2023-05-01 21:06:05', '2023-05-01 21:39:39');
+(1, 2, 'Landlord', '', 'Test', '2005-04-28', 'try2@gmail.com', '0977 578 4225', 'Test Dr. Falcon St.', '09', '0973', '097332', 'id-guy.png', 'Test Trying Testing', '0964 572 4575', '', '2023-05-01 21:06:05', '2023-05-01 21:39:39'),
+(2, 0, 'Ben', '', 'Tarip', '2003-06-11', 'sample.test@gmail.com', '0977 846 4626', 'Afdjhkdg', '09', '0973', '097332', 'default.png', 'Ren Otap', '0956 626 5655', '', '2025-03-24 20:50:38', '2025-03-24 20:50:38');
 
 -- --------------------------------------------------------
 
@@ -223,17 +224,17 @@ CREATE TABLE `penalty` (
 --
 
 INSERT INTO `penalty` (`id`, `name`, `amount`, `percentage`, `description`, `created_at`, `updated_at`) VALUES
-(0, 'None', '0.00', '0.00', 'No penalty to be issue', '2023-03-22 13:41:14', '2023-03-22 13:42:12'),
-(1, 'Late Payment Fee', '50.00', '0.05', 'A penalty for late payment of rent, charged after the due date.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
-(2, 'Bounced Check Fee', '50.00', '0.05', 'A fee charged for checks that are returned due to insufficient funds.', '2023-03-15 14:40:21', '2023-04-23 23:32:10'),
-(3, 'Lost Key Replacement', '200.00', '0.15', 'A fee for replacing lost keys to the apartment or building.', '2023-03-15 14:40:21', '2023-04-23 23:32:28'),
-(4, 'Pet Violation Fee', '100.00', '0.10', 'A penalty for keeping unauthorized pets or for violating pet-related rules.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
-(5, 'Unauthorized Occupant Fee', '200.00', '0.15', 'A penalty for allowing unauthorized occupants to live in the unit.', '2023-03-15 14:40:21', '2023-04-23 23:32:40'),
-(6, 'Noise Violation Fee', '200.00', '0.15', 'A penalty for excessive noise or disturbances that violate community rules.', '2023-03-15 14:40:21', '2023-04-23 23:32:22'),
-(7, 'Parking Violation Fee', '50.00', '0.12', 'A penalty for parking in unauthorized areas or violating parking rules.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
-(8, 'Damaged Property Fee', '500.00', '0.20', 'A fee for repair costs incurred due to damage to the property caused by the tenant.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
-(9, 'Trash Violation Fee', '25.00', '0.12', 'A penalty for improper disposal of trash or not following trash disposal rules.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
-(10, 'Early Lease Termination Fee', '500.00', '0.20', 'A penalty for terminating the lease before the end of the agreed-upon term.', '2023-03-15 14:40:21', '2023-03-15 14:40:21');
+(0, 'None', 0.00, 0.00, 'No penalty to be issue', '2023-03-22 13:41:14', '2023-03-22 13:42:12'),
+(1, 'Late Payment Fee', 50.00, 0.05, 'A penalty for late payment of rent, charged after the due date.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
+(2, 'Bounced Check Fee', 50.00, 0.05, 'A fee charged for checks that are returned due to insufficient funds.', '2023-03-15 14:40:21', '2023-04-23 23:32:10'),
+(3, 'Lost Key Replacement', 200.00, 0.15, 'A fee for replacing lost keys to the apartment or building.', '2023-03-15 14:40:21', '2023-04-23 23:32:28'),
+(4, 'Pet Violation Fee', 100.00, 0.10, 'A penalty for keeping unauthorized pets or for violating pet-related rules.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
+(5, 'Unauthorized Occupant Fee', 200.00, 0.15, 'A penalty for allowing unauthorized occupants to live in the unit.', '2023-03-15 14:40:21', '2023-04-23 23:32:40'),
+(6, 'Noise Violation Fee', 200.00, 0.15, 'A penalty for excessive noise or disturbances that violate community rules.', '2023-03-15 14:40:21', '2023-04-23 23:32:22'),
+(7, 'Parking Violation Fee', 50.00, 0.12, 'A penalty for parking in unauthorized areas or violating parking rules.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
+(8, 'Damaged Property Fee', 500.00, 0.20, 'A fee for repair costs incurred due to damage to the property caused by the tenant.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
+(9, 'Trash Violation Fee', 25.00, 0.12, 'A penalty for improper disposal of trash or not following trash disposal rules.', '2023-03-15 14:40:21', '2023-03-15 14:40:21'),
+(10, 'Early Lease Termination Fee', 500.00, 0.20, 'A penalty for terminating the lease before the end of the agreed-upon term.', '2023-03-15 14:40:21', '2023-03-15 14:40:21');
 
 -- --------------------------------------------------------
 
@@ -259,6 +260,13 @@ CREATE TABLE `properties` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `properties`
+--
+
+INSERT INTO `properties` (`id`, `property_name`, `property_description`, `num_of_floors`, `landlord_id`, `region`, `provinces`, `city`, `barangay`, `street`, `features_description`, `features`, `image_path`, `floor_plan`, `created_at`, `updated_at`) VALUES
+(1, 'Doe Doe Apartelle', '', 2, 2, '09', '0973', '097332', '097332087', 'Sibuco', '', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"]', '[\"D-front.jpg\"]', '[\"67e1d0ee2f7450.68664034_643eb10fd15d29.68824415_D-1stplan.jpg\",\"67e1d0ee304dd9.63701479_643b6c007b3509.53053751_D-2ndplan.jpg\"]', '2025-03-24 21:38:54', '2025-03-24 21:41:35');
 
 -- --------------------------------------------------------
 
@@ -44241,7 +44249,8 @@ CREATE TABLE `tenant` (
 --
 
 INSERT INTO `tenant` (`id`, `user_id`, `first_name`, `middle_name`, `last_name`, `email`, `contact_no`, `relationship_status`, `type_of_household`, `previous_address`, `region`, `provinces`, `city`, `sex`, `date_of_birth`, `has_pet`, `number_of_pets`, `type_of_pet`, `is_smoking`, `has_vehicle`, `vehicle_specification`, `spouse_first_name`, `spouse_last_name`, `spouse_email`, `spouse_num`, `occupants`, `occupants_relations`, `emergency_contact_person`, `emergency_contact_number`, `profile_img`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Tenant', '', 'Test', 'try@gmail.com', '0912 345 6789', 'Married', 'Single Parent', 'Test St. Blg No 12 ', '09', '0973', '097332', 'Male', '2005-04-30', 'Yes', 2, 'Cat', 'Yes', '[\"Car\",\"Others\"]', 'E-Bike', 'Test', 'Wan', 'try1@gmail.com', '0912 344 5786', '[\"Try Other\",\"Test Last\"]', '[\"Son\",\"Daughter\"]', 'Test Try Testing', '0912 344 5786', '', '2023-05-01 08:44:20', '2023-05-01 09:34:03');
+(1, 1, 'Tenant', '', 'Test', 'try@gmail.com', '0912 345 6789', 'Married', 'Single Parent', 'Test St. Blg No 12 ', '09', '0973', '097332', 'Male', '2005-04-30', 'Yes', 2, 'Cat', 'Yes', '[\"Car\",\"Others\"]', 'E-Bike', 'Test', 'Wan', 'try1@gmail.com', '0912 344 5786', '[\"Try Other\",\"Test Last\"]', '[\"Son\",\"Daughter\"]', 'Test Try Testing', '0912 344 5786', '', '2023-05-01 08:44:20', '2023-05-01 09:34:03'),
+(2, 0, 'Jane', '', 'Doe', 'johnsmith1@gmail.com', '0924 851 6597', 'Single', 'One Person', 'Poblacion', '09', '0973', '097332', 'Female', '2000-07-19', 'No', 0, 'None', 'No', '[\"Car\"]', '', '', '', '', '', '[\"\"]', '[\"\"]', 'Penny Doe', '0965 584 5135', '', '2025-03-24 20:29:44', '2025-03-24 20:29:44');
 
 -- --------------------------------------------------------
 
@@ -44443,13 +44452,13 @@ ALTER TABLE `unit_type`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `features`
 --
 ALTER TABLE `features`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `invoice`
@@ -44461,7 +44470,7 @@ ALTER TABLE `invoice`
 -- AUTO_INCREMENT for table `landlord`
 --
 ALTER TABLE `landlord`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `lease`
@@ -44479,13 +44488,13 @@ ALTER TABLE `password_reset_tokens`
 -- AUTO_INCREMENT for table `penalty`
 --
 ALTER TABLE `penalty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `properties`
 --
 ALTER TABLE `properties`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `property_units`
@@ -44497,31 +44506,31 @@ ALTER TABLE `property_units`
 -- AUTO_INCREMENT for table `refbrgy`
 --
 ALTER TABLE `refbrgy`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42030;
 
 --
 -- AUTO_INCREMENT for table `refcitymun`
 --
 ALTER TABLE `refcitymun`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1648;
 
 --
 -- AUTO_INCREMENT for table `refprovince`
 --
 ALTER TABLE `refprovince`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
 -- AUTO_INCREMENT for table `refregion`
 --
 ALTER TABLE `refregion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `tenant`
 --
 ALTER TABLE `tenant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tickets`

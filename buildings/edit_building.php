@@ -444,23 +444,23 @@
 
     // Function to move to the next or previous step of the form wizard
     function nextPrev(n) {
-  var x = document.getElementsByClassName("tab");
-  if (n == 1 && !validateForm()) {
-    Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'Please fix the errors in the current step!'
-    });
-    return false;
-  }
-  x[currentTab].style.display = "none";
-  currentTab = currentTab + n;
-  if (currentTab >= x.length) {
-    document.getElementById("regForm").submit();
-    return false;
-  }
-  showTab(currentTab);
-}
+      var x = document.getElementsByClassName("tab");
+      if (n == 1 && !validateForm()) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Please fix the errors in the current step!'
+        });
+        return false;
+      }
+      x[currentTab].style.display = "none";
+      currentTab = currentTab + n;
+      if (currentTab >= x.length) {
+        document.getElementById("regForm").submit();
+        return false;
+      }
+      showTab(currentTab);
+    }
 
   function validateForm() {
     let form = document.getElementById("regForm");

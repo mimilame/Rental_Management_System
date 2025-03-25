@@ -221,15 +221,17 @@
                         <label for="barangay">Barangay</label>
                         <select title="--Select--" class="form-control selectpicker" data-live-search="true" data-dropup-auto="false" data-size="5" data-liveSearchStyle="startsWith" name="barangay" id="barangay" required>
                           <?php
+                          // Before calling the function, ensure this logs correctly:
+                          var_dump($brgyCode);
                           require_once '../classes/reference.class.php';
                           $ref_obj = new Reference();
                           $ref = $ref_obj->get_barangay();
                           foreach ($ref as $row) {
                           ?>
-                            <option value="<?=$row['brgyCode']?>" data-city="<?=$row['citymunCode']?>" data-province="<?=$row['provCode']?>" data-region="<?=$row['regCode']?>"><?=$row['brgyDesc']?></option>
+                            <option value="<?=htmlspecialchars($row['brgyCode'])?>" data-city="<?=htmlspecialchars($row['citymunCode'])?>" data-province="<?=htmlspecialchars($row['provCode'])?>" data-region="<?=htmlspecialchars($row['regCode'])?>"><?=htmlspecialchars($row['brgyDesc'])?></option>
                           <?php
 
-                          }
+                          } 
                           ?>
                         </select>
                         <div class="invalid-feedback">Must select a Barangay</div>
@@ -244,13 +246,12 @@
                             <select class="form-control form-control-sm" id="city" name="city" required>
                                 <option value="none">--Select--</option>
                                 <?php
-                                require_once '../classes/reference.class.php';
+                                $brgyCode = $_POST['brgyCode'];
                                 $ref_obj = new Reference();
-                                $ref = $ref_obj->get_city_by_brgy($brgyCode);
-                                foreach ($ref as $row) {
-                                ?>
-                                  <option value="<?=$row['citymunCode']?>" selected><?=$row['citymunDesc']?></option>
-                                <?php
+                                $cities = $ref_obj->get_city_by_brgy($brgyCode);
+                            
+                                foreach ($cities as $city) {
+                                    echo "<option value='".htmlspecialchars($city['citymunCode'])."' selected>".htmlspecialchars($city['citymunDesc'])."</option>";
                                 }
                                 ?>
                             </select>
@@ -318,7 +319,7 @@
                               <?php
                               // Connect to the database and retrieve the list of features
                               $result = mysqli_query($conn, "SELECT id, feature_name FROM features");
-                              
+                              $selected_features = isset($_POST['features']) ? $_POST['features'] : [];
                               echo "<div class='row p-3'>";
                               while ($row = mysqli_fetch_assoc($result)) {
                                 $checked = in_array($row['id'], $selected_features) ? "checked" : "";
@@ -445,5 +446,6 @@
         var divLabel = document.querySelector('label[for="div"]');
         divLabel.classList.remove('d-none');
       }
+
 </script>
 </body>
